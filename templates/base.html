@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  {% block title %}
     <title>Taxi Service</title>
+  {% endblock %}
   {% load static %}
   <link rel="stylesheet" href="{% static 'css/styles.css' %}">
   <meta charset="UTF-8">
@@ -15,7 +17,6 @@
   </div>
   <div>
     {% block content %}
-      {% include "taxi/index.html" %}
     {% endblock %}
   </div>
 </div>
